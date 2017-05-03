@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace grade_scores {
-    public class Program {
+    public class grade_scores {
 
         //Normally would declare many of these methods private, but making it simple to call them for testing.
         //A class to store relevant information a line in a read txt file
@@ -24,7 +24,7 @@ namespace grade_scores {
 
         public String getOutputLocation(String readlocation) {
             String outputFileLocation = readlocation;
-            outputFileLocation = outputFileLocation.Remove(outputFileLocation.Length - 4)+"-graded.txt";
+            outputFileLocation = outputFileLocation.Remove(outputFileLocation.Length - 4) + "-graded.txt";
             return outputFileLocation;
         }
 
@@ -112,9 +112,9 @@ namespace grade_scores {
             //Ressolve output text file
             outputFileLocation = getOutputLocation(inputFileLocation);
 
-            
 
-            
+
+
 
             //Read in file
             inputText = System.IO.File.ReadAllLines(inputFileLocation);
@@ -122,10 +122,10 @@ namespace grade_scores {
             stringArrayToLineInfoArray(ref inputText, ref unsortedInfo);
             //Sorts lineInfo array by grade (desc), lastname, firstname
             sortArray(ref sortedInfo, ref unsortedInfo);
-           
+
             //Now to write out the Info to both console and text file
             writeOut(ref sortedInfo, outputFileLocation);
-           
+
             //Closing statement
             Console.Write("Finished: created " + getLastFileName(outputFileLocation));
             Console.ReadLine();
@@ -133,7 +133,7 @@ namespace grade_scores {
 
         //Main method runs gradeScores.
         static void Main(string[] args) {
-            (new Program()).gradeScores(args);
+            (new grade_scores()).gradeScores(args);
         }
     }
 }

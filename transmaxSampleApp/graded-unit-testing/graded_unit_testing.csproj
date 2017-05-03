@@ -54,8 +54,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApplication6\grade_scores.csproj">
-      <Project>{ced4ce72-f26d-409a-b82d-ff071b07dcbd}</Project>
+    <ProjectReference Include="..\grade_scores\grade_scores.csproj">
+      <Project>{da16fc7d-d60f-4c40-a51d-e0d97cd842d6}</Project>
       <Name>grade_scores</Name>
     </ProjectReference>
   </ItemGroup>

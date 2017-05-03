@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CED4CE72-F26D-409A-B82D-FF071B07DCBD}</ProjectGuid>
+    <ProjectGuid>{DA16FC7D-D60F-4C40-A51D-E0D97CD842D6}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApplication6</RootNamespace>
-    <AssemblyName>ConsoleApplication6</AssemblyName>
+    <RootNamespace>grade_scores</RootNamespace>
+    <AssemblyName>grade_scores</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -5,3 +5,10 @@ C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\gr
 C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\graded-unit-testing\obj\Debug\graded_unit_testing.csprojResolveAssemblyReference.cache
 C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\graded-unit-testing\obj\Debug\graded-unit-testing.dll
 C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\graded-unit-testing\obj\Debug\graded-unit-testing.pdb
+C:\Sector\General Content\Git_Folder\transmaxRepo\transmaxSampleApp\graded-unit-testing\bin\Debug\graded-unit-testing.dll
+C:\Sector\General Content\Git_Folder\transmaxRepo\transmaxSampleApp\graded-unit-testing\bin\Debug\graded-unit-testing.pdb
+C:\Sector\General Content\Git_Folder\transmaxRepo\transmaxSampleApp\graded-unit-testing\bin\Debug\grade_scores.exe
+C:\Sector\General Content\Git_Folder\transmaxRepo\transmaxSampleApp\graded-unit-testing\bin\Debug\grade_scores.pdb
+C:\Sector\General Content\Git_Folder\transmaxRepo\transmaxSampleApp\graded-unit-testing\obj\Debug\graded_unit_testing.csprojResolveAssemblyReference.cache
+C:\Sector\General Content\Git_Folder\transmaxRepo\transmaxSampleApp\graded-unit-testing\obj\Debug\graded-unit-testing.dll
+C:\Sector\General Content\Git_Folder\transmaxRepo\transmaxSampleApp\graded-unit-testing\obj\Debug\graded-unit-testing.pdb
