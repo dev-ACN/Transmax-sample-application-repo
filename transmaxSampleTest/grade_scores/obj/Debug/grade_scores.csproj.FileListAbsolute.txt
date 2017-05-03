@@ -1,0 +1,5 @@
+C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\ConsoleApplication6\bin\Debug\ConsoleApplication6.exe.config
+C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\ConsoleApplication6\bin\Debug\ConsoleApplication6.exe
+C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\ConsoleApplication6\bin\Debug\ConsoleApplication6.pdb
+C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\ConsoleApplication6\obj\Debug\ConsoleApplication6.exe
+C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\ConsoleApplication6\obj\Debug\ConsoleApplication6.pdb
