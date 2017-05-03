@@ -43,5 +43,11 @@ namespace graded_unit_testing {
             Assert.AreEqual("Patterson, Bill, 98", wrote[0]);
             //There are like 6 methods. The true main, and writeOut, sortArray, stringArrayToLineInfoArray, getLastFileName, getOutputLocation, also LineInfo
         }
+
+        [TestMethod, TestCategory("grade_scores")]
+        public void TestMethodReadWrite() {
+            Assert.AreEqual("Failed", "";
+            //There are like 6 methods. The true main, and writeOut, sortArray, stringArrayToLineInfoArray, getLastFileName, getOutputLocation, also LineInfo
+        }
     }
 }
