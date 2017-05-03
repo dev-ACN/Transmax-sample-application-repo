@@ -1,7 +1,0 @@
-C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\graded-unit-testing\bin\Debug\graded-unit-testing.dll
-C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\graded-unit-testing\bin\Debug\graded-unit-testing.pdb
-C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\graded-unit-testing\bin\Debug\ConsoleApplication6.exe
-C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\graded-unit-testing\bin\Debug\ConsoleApplication6.pdb
-C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\graded-unit-testing\obj\Debug\graded_unit_testing.csprojResolveAssemblyReference.cache
-C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\graded-unit-testing\obj\Debug\graded-unit-testing.dll
-C:\Sector\Uni\year2sem2\cab101 programming\visual projects\transmaxSampleTest\graded-unit-testing\obj\Debug\graded-unit-testing.pdb
