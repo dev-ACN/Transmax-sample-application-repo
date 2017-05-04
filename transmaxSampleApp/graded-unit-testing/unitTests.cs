@@ -38,7 +38,8 @@ namespace graded_unit_testing {
             //Determine created text files contents
             grade_scores.grade_scores myProgram = new grade_scores.grade_scores();
             myProgram.mainGradeScoresMethod(newArgs);
-            string[] wrote = System.IO.File.ReadAllLines( "C:\\Sector\\General Content\\Git_Folder\\transmaxRepo\\sampleOutput\\grade2-graded.txt");
+            //string[] wrote = System.IO.File.ReadAllLines("C:\\Sector\\General Content\\Git_Folder\\transmaxRepo\\sampleOutput\\grade2-graded.txt");
+            string[] wrote = System.IO.File.ReadAllLines( "C:\\grade2-graded.txt");
             //Console.WriteLine("");
             Assert.AreEqual(fileLines[2], wrote[0]);
             Assert.AreEqual(fileLines[1], wrote[1]);
