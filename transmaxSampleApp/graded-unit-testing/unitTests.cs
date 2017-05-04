@@ -2,6 +2,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using grade_scores;
 
+//Test cases for grade_scores.cs
+//By Aaron Newton
+//You can adjust the output for the created .txt file for the tests by changing the path inside the usingDirectory() method
+
 namespace graded_unit_testing {
     [TestClass]
     public class unitTests {
@@ -84,6 +88,27 @@ namespace graded_unit_testing {
             Assert.AreEqual(fileLines[0], wrote[1]);
             Assert.AreEqual(fileLines[2], wrote[2]);
         }
+
+        //Test sorting by firstname case does not change outcome
+        [TestMethod, TestCategory("grade_scores_sorting")]
+        public void simpleCaseSort() {
+            //Setup given text file for test
+            string[] newArgs = { usingDirectory() + "\\grade.txt" };
+            string[] fileLines = { "Spencer, BOB, 32", "Spencer, amy, 32", "Spencer, cody, 32", "Spencer, DEMETRI, 32" };
+            writeSampleFile(newArgs[0], ref fileLines);
+
+            //Determine created text files contents
+            grade_scores.grade_scores myProgram = new grade_scores.grade_scores();
+            myProgram.mainGradeScoresMethod(newArgs);
+            string[] wrote = System.IO.File.ReadAllLines(usingDirectory() + "\\grade-graded.txt");
+
+            //Assertions that should be true. fileLines should be rearranged into written text file in this order
+            Assert.AreEqual(fileLines[1], wrote[0]);
+            Assert.AreEqual(fileLines[0], wrote[1]);
+            Assert.AreEqual(fileLines[2], wrote[2]);
+            Assert.AreEqual(fileLines[3], wrote[3]);
+        }
+
 
         //This test runs as above but extra white space between words, does not change outcome
         [TestMethod, TestCategory("grade_scores_sorting")]

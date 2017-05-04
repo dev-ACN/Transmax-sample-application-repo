@@ -6,6 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
+//Grade scores program 
+//By Aaron Newton
+//Accepts a '\path\file.txt' to file
+//file should contain on each line "lastname, firstname, grade" in this order to work otherwise throws exception for only the firstline it reads that does not meet assumptions.
+//creates a new '\path\file-graded.txt'sorts by grade, lastname, firstname
+
 namespace grade_scores {
     public class grade_scores {
 
@@ -49,11 +55,11 @@ namespace grade_scores {
             unsortedInfo = new LineInfo[inputText.Length];
             int insertedLines = 0;
             foreach (string line in inputText) {//For each line in file, fill the sorted info array with values
-                //Replace whitespace with a single space, and split string
-                string usedLine = Regex.Replace(line, @"\s+", " ");
-                String[] linesInfo = usedLine.Split(' ');
+                //Remove whitespace
+                string usedLine = Regex.Replace(line, @"\s+", "");
+                String[] linesInfo = usedLine.Split(',');
                 if (linesInfo.Length < 3) {//Should be 3, but extra spaces at last line may interfere, for now just enforcing no less than 3
-                    exceptionThrown("Sorry there is somthing wrong with the text files format. Needs at least 3 values per line to read");
+                    exceptionThrown("Sorry there is somthing wrong with the text files format. Needs at least 3 values per line to read. Check line:" + (insertedLines+1)+" of the given text file.");
                 }
                 //Note format in linesInfo is Lastname, Firstname, Grade so 0 is lastname, 1 is firstname and 2 is grade in seperateUserInfo[].
                
@@ -70,7 +76,7 @@ namespace grade_scores {
                 try {
                     int thisGrade = Convert.ToInt32(linesInfo[2]);
                 } catch {
-                    exceptionThrown("Sorry there is somthing wrong with the text files format. Third value in text file should be a int");
+                    exceptionThrown("Sorry there is somthing wrong with the text files format. Third value in text file should be a int. Check line "+(insertedLines + 1)+" of the given file");
                 }
                 //Put information from lineInfo into unsorted Info
                 unsortedInfo[insertedLines] = new LineInfo();
@@ -87,7 +93,7 @@ namespace grade_scores {
             String allLines = "";
             String writtenLine;
             foreach (LineInfo line in givenInfo) {//Write each line
-                writtenLine = line.lastName + ' ' + line.firstName + ' ' + line.grade;
+                writtenLine = line.lastName + ", " + line.firstName + ", " + line.grade;
                 allLines += writtenLine + '\n';
                 Console.WriteLine(writtenLine);
                 file.WriteLine(writtenLine);
