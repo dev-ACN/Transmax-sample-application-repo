@@ -129,12 +129,12 @@ namespace grade_scores {
 
             //Closing statement
             Console.Write("Finished: created " + getLastFileName(outputFileLocation));
-            Console.ReadLine();
         }
 
         //Main method runs gradeScores.
         static void Main(string[] args) {
             (new grade_scores()).mainGradeScoresMethod(args);
+            Console.ReadLine();
         }
     }
 }
