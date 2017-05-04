@@ -35,9 +35,7 @@ namespace graded_unit_testing {
             //Setup given text file for test
             string[] newArgs = new string[1];
             string[] fileLines = { "Smith, John, 32", "Spencer, Joel, 85", "Spencer, Cody, 85" };
-
             newArgs[0] = "C:\\grade.txt";
-            //newArgs[0] = "C:\\Sector\\General Content\\Git_Folder\\transmaxRepo\\sampleOutput";
             writeSampleFile(newArgs[0], ref fileLines);
 
             //Determine created text files contents

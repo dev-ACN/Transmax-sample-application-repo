@@ -39,7 +39,7 @@ namespace grade_scores {
         //Sorts info by grade (desc), lastname, firstname
         public void sortArray(ref LineInfo[] sortedValues, ref LineInfo[] unsortedValues) {
             sortedValues = new LineInfo[unsortedValues.Length];
-            unsortedValues.OrderByDescending(infograde => infograde.grade).ThenBy(infoLastName => infoLastName.lastName).ThenBy(infoFirstName => infoFirstName.firstName);
+            sortedValues = unsortedValues.OrderByDescending(infograde => infograde.grade).ThenBy(infoLastName => infoLastName.lastName).ThenBy(infoFirstName => infoFirstName.firstName).ToArray();
         }
 
 
@@ -72,8 +72,9 @@ namespace grade_scores {
         public String writeOut(ref LineInfo[] givenInfo, string fileLocation) {
             System.IO.StreamWriter file = new System.IO.StreamWriter(fileLocation);
             String allLines = "";
+            String writtenLine;
             foreach (LineInfo line in givenInfo) {//Write each line
-                String writtenLine = line.lastName + ' ' + line.firstName + ' ' + line.grade;
+                writtenLine = line.lastName + ' ' + line.firstName + ' ' + line.grade;
                 allLines += writtenLine + '\n';
                 Console.WriteLine(writtenLine);
                 file.WriteLine(writtenLine);
@@ -84,7 +85,7 @@ namespace grade_scores {
 
 
         //The main method that can also be called in unit tests.
-        public void gradeScores(string[] args) {
+        public void mainGradeScoresMethod(string[] args) {
 
             String inputFileLocation;
             String outputFileLocation;
@@ -133,7 +134,7 @@ namespace grade_scores {
 
         //Main method runs gradeScores.
         static void Main(string[] args) {
-            (new grade_scores()).gradeScores(args);
+            (new grade_scores()).mainGradeScoresMethod(args);
         }
     }
 }
